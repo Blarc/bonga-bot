@@ -2,8 +2,9 @@ import os
 
 import discord
 from discord.ext import commands
-from discord.utils import get
 from dotenv import load_dotenv
+
+from helper_functions import connect_to_voice, play_audio
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -23,15 +24,8 @@ async def on_ready():
 
 @bot.command(pass_context=True)
 async def vrata(ctx):
-    if not is_connected(ctx):
-        channel = ctx.author.voice.channel
-        await channel.connect()
-
-    guild = ctx.guild
-    voice_client: discord.VoiceClient = get(bot.voice_clients, guild=guild)
-    audio_source = discord.FFmpegPCMAudio('audio/vrata.mp3')
-    if not voice_client.is_playing():
-        voice_client.play(audio_source, after=None)
+    connect_to_voice(ctx)
+    play_audio(ctx, bot, 'audio/vrata.mp3')
 
 
 @bot.command(pass_context=True)
