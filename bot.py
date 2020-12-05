@@ -46,7 +46,7 @@ async def github(ctx):
 
 
 @bot.command(pass_context=True)
-async def help(ctx):
+async def helpMe(ctx):
     await ctx.send('https://github.com/Blarc/bonga-bot/blob/main/README.md')
 
 

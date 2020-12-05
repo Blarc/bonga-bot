@@ -3,7 +3,7 @@ Discord bot for the memes.
 
 Command list
 ---
-- !help (posts readme link)
+- !helpMe (posts readme link)
 - !github (posts github link)
 - !vrata (plays audio)
 - !juric (sends image)
