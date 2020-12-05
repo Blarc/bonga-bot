@@ -7,7 +7,7 @@ def is_connected(ctx):
     return voice_client and voice_client.is_connected()
 
 
-def connect_to_voice(ctx):
+async def connect_to_voice(ctx):
     if not is_connected(ctx):
         channel = ctx.author.voice.channel
         await channel.connect()
