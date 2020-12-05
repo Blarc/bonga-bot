@@ -1,4 +1,3 @@
-import ctypes.util
 import os
 
 import discord
@@ -8,19 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-
-print("ctypes - Find opus:")
-a = ctypes.util.find_library('opus')
-print(a)
-
-print("Discord - Load Opus:")
-b = discord.opus.load_opus(a)
-print(b)
-
-print("Discord - Is loaded:")
-c = discord.opus.is_loaded()
-print(c)
-
 
 bot = commands.Bot(command_prefix='!')
 
