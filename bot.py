@@ -52,6 +52,11 @@ async def zvok(ctx):
 
 
 @bot.command(pass_context=True)
+async def github(ctx):
+    await ctx.send('https://github.com/Blarc/bonga-bot')
+
+
+@bot.command(pass_context=True)
 async def leave(ctx):
     await ctx.voice_client.disconnect()
 
