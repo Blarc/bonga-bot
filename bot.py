@@ -41,14 +41,13 @@ async def juric(ctx):
 
 
 @bot.command(pass_context=True)
-async def zvok(ctx):
-    channel = ctx.message.channel
-    await channel.send(file=discord.File('audio/vrata.mp3'), content="-play file")
+async def github(ctx):
+    await ctx.send('https://github.com/Blarc/bonga-bot')
 
 
 @bot.command(pass_context=True)
-async def github(ctx):
-    await ctx.send('https://github.com/Blarc/bonga-bot')
+async def help(ctx):
+    await ctx.send('https://github.com/Blarc/bonga-bot/blob/main/README.md')
 
 
 @bot.command(pass_context=True)
