@@ -12,11 +12,6 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='!')
 
 
-def is_connected(ctx):
-    voice_client = get(ctx.bot.voice_clients, guild=ctx.guild)
-    return voice_client and voice_client.is_connected()
-
-
 @bot.event
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
@@ -47,6 +42,11 @@ async def helpMe(ctx):
 @bot.command(pass_context=True)
 async def leave(ctx):
     await ctx.voice_client.disconnect()
+
+
+@bot.command(pass_context=True)
+async def test(ctx):
+    await play_audio(ctx, bot, 'http://fridom.si/wp-content/uploads/2019/12/01-Habilitacija.mp3')
 
 
 bot.run(TOKEN)
