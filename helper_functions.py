@@ -13,7 +13,8 @@ async def connect_to_voice(ctx):
         await channel.connect()
 
 
-def play_audio(ctx, bot, path):
+async def play_audio(ctx, bot, path):
+    await connect_to_voice(ctx)
     guild = ctx.guild
     voice_client: discord.VoiceClient = get(bot.voice_clients, guild=guild)
     audio_source = discord.FFmpegPCMAudio(path)

@@ -19,8 +19,7 @@ async def on_ready():
 
 @bot.command(pass_context=True)
 async def vrata(ctx):
-    connect_to_voice(ctx)
-    play_audio(ctx, bot, 'audio/vrata.mp3')
+    await play_audio(ctx, bot, 'audio/vrata.mp3')
 
 
 @bot.command(pass_context=True)
