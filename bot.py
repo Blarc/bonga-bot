@@ -1,12 +1,26 @@
+import ctypes.util
 import os
-import discord
 
+import discord
 from discord.ext import commands
 from discord.utils import get
 from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+
+print("ctypes - Find opus:")
+a = ctypes.util.find_library('opus')
+print(a)
+
+print("Discord - Load Opus:")
+b = discord.opus.load_opus(a)
+print(b)
+
+print("Discord - Is loaded:")
+c = discord.opus.is_loaded()
+print(c)
+
 
 bot = commands.Bot(command_prefix='!')
 
@@ -37,6 +51,18 @@ async def vrata(ctx):
     audio_source = discord.FFmpegPCMAudio('audio/vrata.mp3')
     if not voice_client.is_playing():
         voice_client.play(audio_source, after=None)
+
+
+@bot.command(pass_context=True)
+async def juric(ctx):
+    channel = ctx.message.channel
+    await channel.send(file=discord.File('img/juric.jpg'))
+
+
+@bot.command(pass_context=True)
+async def zvok(ctx):
+    channel = ctx.message.channel
+    await channel.send(file=discord.File('audio/vrata.mp3'), content="-play file")
 
 
 @bot.command(pass_context=True)
