@@ -43,6 +43,11 @@ async def caga(ctx):
 
 
 @bot.command(pass_context=True)
+async def creep(ctx):
+    await play_audio(ctx, bot, 'audio/creep.mp3')
+
+
+@bot.command(pass_context=True)
 async def doma(ctx):
     await play_audio(ctx, bot, 'audio/doma.mp3')
 
