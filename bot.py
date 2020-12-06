@@ -1,3 +1,4 @@
+import json
 import os
 
 import discord
@@ -51,6 +52,13 @@ async def doma(ctx):
 async def juric(ctx):
     channel = ctx.message.channel
     await channel.send(file=discord.File('img/juric.jpg'))
+
+
+@bot.command(pass_context=True)
+async def bongacams(ctx):
+    with open('text/bongacams.json') as json_file:
+        data = json.load(json_file)
+        await ctx.send(data)
 
 
 @bot.command(pass_context=True)
