@@ -13,3 +13,4 @@ Command list
 - !shesaid (that's what she said)
 - !doma (za praznike smo doma)
 - !bongacams (bongacams videos links)
+- !creep (živijo tadson)
