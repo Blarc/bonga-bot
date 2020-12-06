@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-from helper_functions import connect_to_voice, play_audio
+from helper_functions import play_audio
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -20,6 +20,16 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def vrata(ctx):
     await play_audio(ctx, bot, 'audio/vrata.mp3')
+
+
+@bot.command(pass_context=True)
+async def mike(ctx):
+    await play_audio(ctx, bot, 'audio/mike.mp3')
+
+
+@bot.command(pass_context=True)
+async def shesaid(ctx):
+    await play_audio(ctx, bot, 'audio/thatswhatshesaid.mp3')
 
 
 @bot.command(pass_context=True)
