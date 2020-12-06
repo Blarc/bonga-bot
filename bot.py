@@ -28,8 +28,14 @@ async def mike(ctx):
 
 
 @bot.command(pass_context=True)
+async def burgundy(ctx):
+    await play_audio(ctx, bot, 'audio/burgundy.mp3')
+
+
+@bot.command(pass_context=True)
 async def shesaid(ctx):
     await play_audio(ctx, bot, 'audio/thatswhatshesaid.mp3')
+
 
 @bot.command(pass_context=True)
 async def caga(ctx):

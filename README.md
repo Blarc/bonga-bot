@@ -9,3 +9,6 @@ Command list
 - !juric (sends image)
 - !leave (bot leaves the audio channel)
 - !caga (caga na pune)
+- !mike (prison mike)
+- !shesaid (that's what she said)
+
