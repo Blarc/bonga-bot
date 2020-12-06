@@ -31,6 +31,10 @@ async def mike(ctx):
 async def shesaid(ctx):
     await play_audio(ctx, bot, 'audio/thatswhatshesaid.mp3')
 
+@bot.command(pass_context=True)
+async def caga(ctx):
+    await play_audio(ctx, bot, 'audio/caga.mp3')
+
 
 @bot.command(pass_context=True)
 async def juric(ctx):

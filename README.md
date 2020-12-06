@@ -8,3 +8,4 @@ Command list
 - !vrata (plays audio)
 - !juric (sends image)
 - !leave (bot leaves the audio channel)
+- !caga (caga na pune)
