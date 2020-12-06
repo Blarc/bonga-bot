@@ -9,3 +9,4 @@ Command list
 - !juric (sends image)
 - !leave (bot leaves the audio channel)
 - !caga (caga na pune)
+- !doma (za praznike smo doma)
