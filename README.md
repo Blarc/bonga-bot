@@ -16,3 +16,4 @@ Command list
 - !creep (živijo tadson)
 - !disgusteng (disgusteng)
 - !disgustengwhole (disgusteng cijela)
+- !loveya (weeeeeeeeeee)

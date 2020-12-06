@@ -39,6 +39,11 @@ async def shesaid(ctx):
 
 
 @bot.command(pass_context=True)
+async def loveya(ctx):
+    await play_audio(ctx, bot, 'audio/loveya.mp3')
+
+
+@bot.command(pass_context=True)
 async def disgusteng(ctx):
     await play_audio(ctx, bot, 'audio/disgusteng.mp3')
 
