@@ -12,4 +12,4 @@ Command list
 - !mike (prison mike)
 - !shesaid (that's what she said)
 - !doma (za praznike smo doma)
-- !bongacams
+- !bongacams (bongacams videos links)
