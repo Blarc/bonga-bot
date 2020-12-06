@@ -11,4 +11,4 @@ Command list
 - !caga (caga na pune)
 - !mike (prison mike)
 - !shesaid (that's what she said)
-
+- !doma (za praznike smo doma)

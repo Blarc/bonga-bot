@@ -43,6 +43,11 @@ async def caga(ctx):
 
 
 @bot.command(pass_context=True)
+async def doma(ctx):
+    await play_audio(ctx, bot, 'audio/doma.mp3')
+
+
+@bot.command(pass_context=True)
 async def juric(ctx):
     channel = ctx.message.channel
     await channel.send(file=discord.File('img/juric.jpg'))
