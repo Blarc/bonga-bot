@@ -14,3 +14,5 @@ Command list
 - !doma (za praznike smo doma)
 - !bongacams (bongacams videos links)
 - !creep (živijo tadson)
+- !disgusteng (disgusteng)
+- !disgustengwhole (disgusteng cijela)

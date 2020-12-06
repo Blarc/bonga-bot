@@ -39,6 +39,16 @@ async def shesaid(ctx):
 
 
 @bot.command(pass_context=True)
+async def disgusteng(ctx):
+    await play_audio(ctx, bot, 'audio/disgusteng.mp3')
+
+
+@bot.command(pass_context=True)
+async def disgustengwhole(ctx):
+    await play_audio(ctx, bot, 'audio/disgustengwhole.mp3')
+
+
+@bot.command(pass_context=True)
 async def caga(ctx):
     await play_audio(ctx, bot, 'audio/caga.mp3')
 
