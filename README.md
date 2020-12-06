@@ -18,3 +18,4 @@ Command list
 - !disgustengwhole (disgusteng cijela)
 - !loveya (weeeeeeeeeee)
 - !uvuvwevwevweonyetenyevweugwemuhwemosas (Uvuvwevwevwe Onyetenyevweugwemuhwem Osas)
+- !parkour (hardcore parkour)
