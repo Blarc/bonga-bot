@@ -17,3 +17,4 @@ Command list
 - !disgusteng (disgusteng)
 - !disgustengwhole (disgusteng cijela)
 - !loveya (weeeeeeeeeee)
+- !uvuvwevwevweonyetenyevweugwemuhwemosas (Uvuvwevwevwe Onyetenyevweugwemuhwem Osas)
