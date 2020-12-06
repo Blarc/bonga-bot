@@ -63,7 +63,7 @@ async def juric(ctx):
 async def bongacams(ctx):
     with open('text/bongacams.json') as json_file:
         data = json.load(json_file)
-        for title, link in data.values():
+        for title, link in data.items():
             await ctx.send(f"{title}: {link}")
 
 
