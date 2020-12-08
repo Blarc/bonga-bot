@@ -20,3 +20,4 @@ Command list
 - !uvuvwevwevweonyetenyevweugwemuhwemosas (Uvuvwevwevwe Onyetenyevweugwemuhwem Osas)
 - !parkour (hardcore parkour)
 - !knock (knock knock)
+- !tts <text> (text-to-speech)

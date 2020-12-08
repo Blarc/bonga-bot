@@ -6,6 +6,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 
 from helper_functions import play_audio
+from text_to_speech import play_text_to_speech, ENGLISH_LANG, SLOVENIAN_LANG
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -87,6 +88,12 @@ async def juric(ctx):
 @bot.command(pass_context=True)
 async def knock(ctx):
     await play_audio(ctx, bot, 'audio/knock.mp3')
+
+
+@bot.command(pass_context=True)
+async def tts(ctx, *text):
+    language = ENGLISH_LANG
+    await play_text_to_speech(ctx, bot, language, '%20'.join(text))
 
 
 @bot.command(pass_context=True)
