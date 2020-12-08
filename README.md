@@ -19,3 +19,4 @@ Command list
 - !loveya (weeeeeeeeeee)
 - !uvuvwevwevweonyetenyevweugwemuhwemosas (Uvuvwevwevwe Onyetenyevweugwemuhwem Osas)
 - !parkour (hardcore parkour)
+- !knock (knock knock)

@@ -85,6 +85,11 @@ async def juric(ctx):
 
 
 @bot.command(pass_context=True)
+async def knock(ctx):
+    await play_audio(ctx, bot, 'audio/knock.mp3')
+
+
+@bot.command(pass_context=True)
 async def bongacams(ctx):
     with open('text/bongacams.json') as json_file:
         data = json.load(json_file)
