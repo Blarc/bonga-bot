@@ -32,7 +32,7 @@ def get_text_to_speech(language, text):
 
 
 def parse_input(args):
-    language = ENGLISH_LANG
+    language = SLOVENIAN_LANG
     speed = 0
 
     args = list(args)
