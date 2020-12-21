@@ -21,3 +21,6 @@ Command list
 - !parkour (hardcore parkour)
 - !knock (knock knock)
 - !tts <text> (text-to-speech)
+- !youknowit (intro)
+- !rickroll (Never Gonna Give You Up)
+- !ha (Ha Gay!)

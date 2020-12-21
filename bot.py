@@ -50,6 +50,21 @@ async def parkour(ctx):
 
 
 @bot.command(pass_context=True)
+async def youknowit(ctx):
+    await play_audio(ctx, bot, 'audio/youknowit.mp3')
+
+
+@bot.command(pass_context=True)
+async def ha(ctx):
+    await play_audio(ctx, bot, 'audio/ha.mp3')
+
+
+@bot.command(pass_context=True)
+async def rickroll(ctx):
+    await play_audio(ctx, bot, 'audio/rickroll.mp3')
+
+
+@bot.command(pass_context=True)
 async def uvuvwevwevweonyetenyevweugwemuhwemosas(ctx):
     await play_audio(ctx, bot, 'audio/uvuvwevwevweonyetenyevweugwemuhwemosas.mp3')
 
