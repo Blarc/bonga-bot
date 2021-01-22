@@ -24,3 +24,4 @@ Command list
 - !youknowit (intro)
 - !rickroll (Never Gonna Give You Up)
 - !ha (Ha Gay!)
+- !molci (Molci, lajdra)
