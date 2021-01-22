@@ -93,6 +93,10 @@ async def creep(ctx):
 async def doma(ctx):
     await play_audio(ctx, bot, 'audio/doma.mp3')
 
+@bot.command(pass_context=True)
+async def molci(ctx):
+    await play_audio(ctx, bot, 'audio/molcilajdra.mp3')
+
 
 @bot.command(pass_context=True)
 async def juric(ctx):
